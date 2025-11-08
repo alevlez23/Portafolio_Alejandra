@@ -1,0 +1,264 @@
+/* ===== ESTILO GENERAL ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #f4f4f4;
+}
+
+header {
+  background: linear-gradient(90deg, #001133, #3a64b9);
+  color: #00ffff;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: #001a33;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #00ffff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.activo {
+  color: #ffffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.resaltado {
+  color: #00ffff;
+}
+
+footer {
+  background-color: #001133;
+  color: #00ffff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ===== IMAGEN DE PERFIL GENERAL ===== */
+.perfil {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid #00ffff;
+  margin: 20px auto;
+  display: block;
+}
+
+/* ===== SECCIÓN SERVICIOS ===== */
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #001a33;
+  border: 1px solid #00ffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  color: #143061;
+  box-shadow: 0 0 10px #00ffff44;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffffaa;
+}
+
+.card i {
+  font-size: 40px;
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+/* ===== FORMULARIOS ===== */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+input, textarea {
+  background-color: #001a33;
+  color: #123668;
+}
+
+button {
+  background-color: #00ffff;
+  color: #001a33;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0088ff;
+  color: #e3e3e3;
+}
+
+/* ===== SOBRE MÍ (DISEÑO PARA LAPTOP) ===== */
+.sobre-mi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 60px 100px;
+  gap: 40px;
+}
+
+.sobre-mi .info {
+  flex: 1;
+  max-width: 600px;
+}
+
+.sobre-mi .info h2 {
+  color: #00ffff;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.sobre-mi .info p {
+  margin-bottom: 18px;
+  line-height: 1.6;
+  font-size: 17px;
+  color: #11315f;
+}
+
+.sobre-mi .info i {
+  color: #00ffff;
+  margin-right: 8px;
+}
+
+.sobre-mi .imagen {
+  flex: 0 0 320px;
+  text-align: center;
+  position: relative;
+}
+
+/* ---- FOTO CON EFECTO DE BRILLO NEÓN ---- */
+.brillo {
+  position: relative;
+  display: inline-block;
+}
+
+.brillo::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    #00ffff,
+    #0088ff,
+    #00ffff,
+    #0088ff,
+    #00ffff
+  );
+  animation: giro 10s linear infinite;
+  filter: blur(8px);
+  z-index: 0;
+}
+
+@keyframes giro {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sobre-mi .perfil {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00ffff;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== SECCIÓN PORTAFOLIO / PROYECTOS ===== */
+.portafolio {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.portafolio h2 {
+  color: #00ffff;
+  margin-bottom: 20px;
+}
+
+.portafolio p {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  color: #213b7a;
+  line-height: 1.6;
+}
+
+.proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.proyecto {
+  background-color: #001a33;
+  border: 1px solid #00ffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  color: #fdfdfd;
+  box-shadow: 0 0 15px #00ffff44;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.proyecto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00ffffaa;
+}
+
+.proyecto i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #00ffff;
+}
+
+.proyecto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 2px solid #00ffff33;
+}
+
+
+

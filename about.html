@@ -1,43 +1,443 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
+  <!-- =====================================================
+       CONFIGURACIÓN BÁSICA
+  ====================================================== -->
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre mí - Alejandra Velez</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Conoce más sobre Alejandra Velez, estudiante de Ingeniería en Tecnologías de la Información y programadora junior."
+  >
+
+  <meta
+    name="theme-color"
+    content="#020711"
+  >
+
+
+  <!-- =====================================================
+       TÍTULO
+  ====================================================== -->
+
+  <title>
+    Sobre mí | Portafolio Alejandra Velez
+  </title>
+
+
+  <!-- =====================================================
+       FONT AWESOME
+  ====================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+
+
+  <!-- =====================================================
+       ESTILOS
+  ====================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script
+    src="assets/js/main.js"
+    defer
+  ></script>
+
 </head>
 
+
 <body>
-  <header>
-    <h1>Sobre mí</h1>
-  </header>
+
+
+  <!-- =====================================================
+       NAVEGACIÓN
+  ====================================================== -->
 
   <nav>
-    <a href="index.html">Inicio</a>
-    <a href="about.html" class="activo">Sobre mí</a>
-    <a href="services.html">Servicios</a>
-    <a href="proyecto.html">Proyectos</a>
-    <a href="contact.html">Contacto</a>
+
+    <div class="nav-container">
+
+
+      <!-- MARCA -->
+
+      <a
+        href="index.html"
+        class="nav-brand"
+        aria-label="Ir al inicio"
+      >
+        Alejandra
+        <span>
+          .
+        </span>
+      </a>
+
+
+      <!-- MENÚ MÓVIL -->
+
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+
+        <i
+          class="fa-solid fa-bars"
+          aria-hidden="true"
+        ></i>
+
+      </button>
+
+
+      <!-- ENLACES -->
+
+      <div
+        class="nav-links"
+        id="nav-links"
+      >
+
+        <a href="index.html">
+          Inicio
+        </a>
+
+        <a
+          href="about.html"
+          class="activo"
+        >
+          Sobre mí
+        </a>
+
+        <a href="services.html">
+          Habilidades
+        </a>
+
+        <a href="proyecto.html">
+          Proyectos
+        </a>
+
+        <a href="contact.html">
+          Contacto
+        </a>
+
+      </div>
+
+    </div>
+
   </nav>
 
-  <main class="sobre-mi">
-    <div class="info">
-      <h2><i class="fa-solid fa-user"></i> Alejandra Velez</h2>
-      <p><i class="fa-solid fa-graduation-cap"></i> Estudiante de <strong>Ingeniería en Tecnologías de la Información</strong>.</p>
-      <p><i class="fa-solid fa-laptop-code"></i> Soy una programadora junior apasionada por el desarrollo web, la tecnología y la innovación. Me gusta crear proyectos modernos, funcionales y visualmente atractivos.</p>
-      <p><i class="fa-solid fa-lightbulb"></i> Me motiva seguir aprendiendo y mejorar mis habilidades en diseño, desarrollo y programación para ofrecer soluciones tecnológicas creativas.</p>
-    </div>
 
-    <div class="imagen">
-      <div class="brillo">
-        <img src="assets/images/imagen1.jpeg" alt="Foto de Alejandra Velez" class="perfil">
+  <!-- =====================================================
+       ENCABEZADO
+  ====================================================== -->
+
+  <header>
+
+    <h1>
+      Sobre mí
+    </h1>
+
+    <p class="header-subtitle">
+      Conoce un poco más sobre mi formación,
+      intereses y objetivos dentro del desarrollo
+      de software.
+    </p>
+
+  </header>
+
+
+  <!-- =====================================================
+       CONTENIDO PRINCIPAL
+  ====================================================== -->
+
+  <main>
+
+
+    <!-- ===================================================
+         PRESENTACIÓN
+    ==================================================== -->
+
+    <section class="sobre-mi">
+
+
+      <!-- INFORMACIÓN -->
+
+      <div class="info">
+
+
+        <p class="section-label">
+          Perfil
+        </p>
+
+
+        <h2>
+
+          <i
+            class="fa-solid fa-user"
+            aria-hidden="true"
+          ></i>
+
+          Alejandra Velez
+
+        </h2>
+
+
+        <p>
+
+          <i
+            class="fa-solid fa-graduation-cap"
+            aria-hidden="true"
+          ></i>
+
+          Soy estudiante de
+
+          <strong>
+            Ingeniería en Tecnologías de la Información
+          </strong>
+
+          y me encuentro desarrollando mis conocimientos
+          en programación, desarrollo web y tecnologías
+          orientadas a la creación de soluciones digitales.
+
+        </p>
+
+
+        <p>
+
+          <i
+            class="fa-solid fa-laptop-code"
+            aria-hidden="true"
+          ></i>
+
+          Como programadora junior, me interesa desarrollar
+          aplicaciones e interfaces modernas, funcionales
+          y adaptables a distintos dispositivos.
+
+        </p>
+
+
+        <p>
+
+          <i
+            class="fa-solid fa-lightbulb"
+            aria-hidden="true"
+          ></i>
+
+          Me motiva continuar aprendiendo nuevas
+          herramientas, fortalecer mis conocimientos
+          técnicos y aplicar lo aprendido en proyectos
+          prácticos.
+
+        </p>
+
+
+        <!-- ===============================================
+             TARJETAS DE INFORMACIÓN
+        ================================================ -->
+
+        <div class="info-grid">
+
+
+          <!-- FORMACIÓN -->
+
+          <article class="info-card">
+
+            <i
+              class="fa-solid fa-graduation-cap"
+              aria-hidden="true"
+            ></i>
+
+            <h3>
+              Formación
+            </h3>
+
+            <p>
+              Ingeniería en Tecnologías de la Información.
+            </p>
+
+          </article>
+
+
+          <!-- PERFIL -->
+
+          <article class="info-card">
+
+            <i
+              class="fa-solid fa-code"
+              aria-hidden="true"
+            ></i>
+
+            <h3>
+              Perfil
+            </h3>
+
+            <p>
+              Programadora junior con interés en
+              desarrollo web y software.
+            </p>
+
+          </article>
+
+
+          <!-- OBJETIVO -->
+
+          <article class="info-card">
+
+            <i
+              class="fa-solid fa-bullseye"
+              aria-hidden="true"
+            ></i>
+
+            <h3>
+              Objetivo
+            </h3>
+
+            <p>
+              Seguir desarrollando experiencia mediante
+              proyectos y soluciones tecnológicas.
+            </p>
+
+          </article>
+
+
+          <!-- APRENDIZAJE -->
+
+          <article class="info-card">
+
+            <i
+              class="fa-solid fa-book-open"
+              aria-hidden="true"
+            ></i>
+
+            <h3>
+              Aprendizaje
+            </h3>
+
+            <p>
+              Fortalecer conocimientos en frontend,
+              backend, bases de datos y herramientas
+              de desarrollo.
+            </p>
+
+          </article>
+
+
+        </div>
+
+
+        <!-- ===============================================
+             BOTONES
+        ================================================ -->
+
+        <div class="hero-actions">
+
+          <a
+            href="services.html"
+            class="btn btn-primary"
+          >
+
+            <i
+              class="fa-solid fa-code"
+              aria-hidden="true"
+            ></i>
+
+            Ver habilidades
+
+          </a>
+
+
+          <a
+            href="proyecto.html"
+            class="btn btn-secondary"
+          >
+
+            <i
+              class="fa-solid fa-folder-open"
+              aria-hidden="true"
+            ></i>
+
+            Ver proyectos
+
+          </a>
+
+        </div>
+
+
       </div>
-    </div>
+
+
+      <!-- =================================================
+           IMAGEN
+      ================================================== -->
+
+      <div class="imagen">
+
+        <div class="brillo">
+
+          <img
+            src="assets/images/imagen1.jpeg"
+            alt="Fotografía de perfil de Alejandra Velez"
+            class="perfil"
+          >
+
+        </div>
+
+      </div>
+
+
+    </section>
+
+
   </main>
 
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
   <footer>
-    <p>© 2025 Alejandra Velez - Todos los derechos reservados.</p>
+
+    <p>
+
+      ©
+
+      <span id="current-year">
+        2026
+      </span>
+
+      <strong>
+        Alejandra Velez
+      </strong>
+
+      · Portafolio de desarrollo de software.
+
+    </p>
+
   </footer>
+
+
 </body>
+
 </html>

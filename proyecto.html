@@ -1,58 +1,546 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
+  <!-- =====================================================
+       CONFIGURACIÓN BÁSICA
+  ====================================================== -->
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyectos - Alejandra Vélez</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Proyectos desarrollados por Alejandra Velez durante su formación en programación, desarrollo web y tecnologías de la información."
+  >
+
+  <meta
+    name="theme-color"
+    content="#020711"
+  >
+
+
+  <!-- =====================================================
+       TÍTULO
+  ====================================================== -->
+
+  <title>
+    Proyectos | Portafolio Alejandra Velez
+  </title>
+
+
+  <!-- =====================================================
+       FONT AWESOME
+  ====================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+
+
+  <!-- =====================================================
+       ESTILOS
+  ====================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script
+    src="assets/js/main.js"
+    defer
+  ></script>
+
 </head>
 
+
 <body>
-  <header>
-    <h1>Mis Proyectos</h1>
-  </header>
+
+
+  <!-- =====================================================
+       NAVEGACIÓN
+  ====================================================== -->
 
   <nav>
-    <a href="index.html">Inicio</a>
-    <a href="about.html">Sobre mí</a>
-    <a href="services.html">Servicios</a>
-    <a href="proyecto.html" class="activo">Proyectos</a>
-    <a href="contact.html">Contacto</a>
+
+    <div class="nav-container">
+
+
+      <!-- MARCA -->
+
+      <a
+        href="index.html"
+        class="nav-brand"
+        aria-label="Ir al inicio"
+      >
+        Alejandra
+        <span>
+          .
+        </span>
+      </a>
+
+
+      <!-- BOTÓN MENÚ MÓVIL -->
+
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+
+        <i
+          class="fa-solid fa-bars"
+          aria-hidden="true"
+        ></i>
+
+      </button>
+
+
+      <!-- ENLACES -->
+
+      <div
+        class="nav-links"
+        id="nav-links"
+      >
+
+        <a href="index.html">
+          Inicio
+        </a>
+
+        <a href="about.html">
+          Sobre mí
+        </a>
+
+        <a href="services.html">
+          Habilidades
+        </a>
+
+        <a
+          href="proyecto.html"
+          class="activo"
+        >
+          Proyectos
+        </a>
+
+        <a href="contact.html">
+          Contacto
+        </a>
+
+      </div>
+
+    </div>
+
   </nav>
 
+
+  <!-- =====================================================
+       ENCABEZADO
+  ====================================================== -->
+
+  <header>
+
+    <h1>
+      Mis Proyectos
+    </h1>
+
+    <p class="header-subtitle">
+      Una selección de trabajos desarrollados durante
+      mi formación y práctica en programación.
+    </p>
+
+  </header>
+
+
+  <!-- =====================================================
+       CONTENIDO PRINCIPAL
+  ====================================================== -->
+
   <main>
+
+
     <section class="portafolio">
-      <h2>Proyectos Destacados</h2>
-      <p>Estos son algunos de los trabajos y prácticas que he desarrollado durante mi formación como programadora. Cada proyecto refleja mi interés por crear soluciones funcionales, limpias y visualmente agradables.</p>
+
+
+      <!-- =================================================
+           INTRODUCCIÓN
+      ================================================== -->
+
+      <p class="section-label">
+        Portafolio
+      </p>
+
+
+      <h2>
+        Proyectos destacados
+      </h2>
+
+
+      <p>
+        Estos proyectos representan parte de mi proceso
+        de aprendizaje y aplicación práctica de
+        tecnologías web, programación y bases de datos.
+        Cada uno me ha permitido fortalecer habilidades
+        de lógica, diseño, organización y desarrollo de
+        soluciones.
+      </p>
+
+
+      <!-- =================================================
+           GRID DE PROYECTOS
+      ================================================== -->
 
       <div class="proyectos">
-        <div class="proyecto">
-          <i class="fa-solid fa-laptop-code"></i>
-          <h3>Portafolio Personal con Vite y Node</h3>
-          <p>Este proyecto fue desarrollado utilizando <strong>Vite</strong> y <strong>Node.js</strong> para crear un portafolio personal rápido, moderno y optimizado. Implementa un diseño responsivo con <strong>HTML, CSS y React</strong>, mostrando mis habilidades, servicios y proyectos de programación.</p>
-          <img src="assets/images/proyecto1.png" alt="Proyecto 1">
-        </div>
 
-        <div class="proyecto">
-          <i class="fa-brands fa-python" style="color: #efec53;"></i>
-          <h3>Automatización con Python</h3>
-          <p>Proyecto de práctica en estructuras de control, manejo de errores y lógica básica en Python. Permite realizar operaciones aritméticas y mostrar resultados de forma clara y funcional.</p>
-          <img src="assets/images/proyecto2.png" alt="Proyecto 2">
-        </div>
 
-        <div class="proyecto">
-          <i class="fa-solid fa-database" style="color: #231f5f;"></i>
-          <h3>Gestión de Base de Datos</h3>
-          <p>Proyecto desarrollado en SQL y C++ enfocado en la gestión segura de registros de usuarios, implementando validaciones de datos, control de acceso y almacenamiento estructurado.</p>
-          <img src="assets/images/proyecto3.png" alt="Proyecto 3">
-        </div>
+        <!-- =================================================
+             PROYECTO 1
+        ================================================== -->
+
+        <article class="proyecto">
+
+
+          <!-- ICONO -->
+
+          <i
+            class="fa-solid fa-laptop-code"
+            aria-hidden="true"
+          ></i>
+
+
+          <!-- TÍTULO -->
+
+          <h3>
+            Portafolio Personal
+          </h3>
+
+
+          <!-- DESCRIPCIÓN -->
+
+          <p>
+            Desarrollo de un portafolio web personal
+            orientado a presentar mi perfil, habilidades,
+            proyectos y medios de contacto.
+
+            El proyecto utiliza HTML, CSS y JavaScript
+            para construir una interfaz moderna,
+            organizada y adaptable a diferentes tamaños
+            de pantalla.
+          </p>
+
+
+          <!-- TECNOLOGÍAS -->
+
+          <div
+            class="project-tech"
+            aria-label="Tecnologías del proyecto"
+          >
+
+            <span>
+              HTML5
+            </span>
+
+            <span>
+              CSS3
+            </span>
+
+            <span>
+              JavaScript
+            </span>
+
+            <span>
+              GitHub Pages
+            </span>
+
+          </div>
+
+
+          <!-- IMAGEN -->
+
+          <img
+            src="assets/images/proyecto1.png"
+            alt="Vista previa del proyecto de portafolio personal"
+            loading="lazy"
+          >
+
+
+          <!-- BOTONES -->
+
+          <div class="project-actions">
+
+            <a
+              href="https://alevlez23.github.io/Portafolio_Alejandra/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+
+              <i
+                class="fa-solid fa-arrow-up-right-from-square"
+                aria-hidden="true"
+              ></i>
+
+              Ver proyecto
+
+            </a>
+
+
+            <a
+              href="https://github.com/alevlez23/Portafolio_Alejandra"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+
+              <i
+                class="fa-brands fa-github"
+                aria-hidden="true"
+              ></i>
+
+              Ver código
+
+            </a>
+
+          </div>
+
+
+        </article>
+
+
+        <!-- =================================================
+             PROYECTO 2
+        ================================================== -->
+
+        <article class="proyecto">
+
+
+          <!-- ICONO -->
+
+          <i
+            class="fa-brands fa-python"
+            aria-hidden="true"
+          ></i>
+
+
+          <!-- TÍTULO -->
+
+          <h3>
+            Automatización con Python
+          </h3>
+
+
+          <!-- DESCRIPCIÓN -->
+
+          <p>
+            Proyecto académico orientado a practicar
+            estructuras de control, manejo de errores,
+            operaciones aritméticas y aplicación de
+            lógica básica mediante Python.
+
+            El objetivo principal fue desarrollar una
+            solución clara y funcional utilizando los
+            fundamentos del lenguaje.
+          </p>
+
+
+          <!-- TECNOLOGÍAS -->
+
+          <div
+            class="project-tech"
+            aria-label="Tecnologías del proyecto"
+          >
+
+            <span>
+              Python
+            </span>
+
+            <span>
+              Lógica
+            </span>
+
+            <span>
+              Estructuras de control
+            </span>
+
+          </div>
+
+
+          <!-- IMAGEN -->
+
+          <img
+            src="assets/images/proyecto2.png"
+            alt="Vista previa del proyecto de práctica desarrollado con Python"
+            loading="lazy"
+          >
+
+
+        </article>
+
+
+        <!-- =================================================
+             PROYECTO 3
+        ================================================== -->
+
+        <article class="proyecto">
+
+
+          <!-- ICONO -->
+
+          <i
+            class="fa-solid fa-database"
+            aria-hidden="true"
+          ></i>
+
+
+          <!-- TÍTULO -->
+
+          <h3>
+            Gestión de Base de Datos
+          </h3>
+
+
+          <!-- DESCRIPCIÓN -->
+
+          <p>
+            Proyecto académico enfocado en la
+            administración estructurada de registros
+            mediante SQL y C++.
+
+            Durante su desarrollo se aplicaron conceptos
+            relacionados con almacenamiento,
+            validaciones, consultas y organización de
+            información.
+          </p>
+
+
+          <!-- TECNOLOGÍAS -->
+
+          <div
+            class="project-tech"
+            aria-label="Tecnologías del proyecto"
+          >
+
+            <span>
+              SQL
+            </span>
+
+            <span>
+              C++
+            </span>
+
+            <span>
+              Bases de datos
+            </span>
+
+            <span>
+              CRUD
+            </span>
+
+          </div>
+
+
+          <!-- IMAGEN -->
+
+          <img
+            src="assets/images/proyecto3.png"
+            alt="Vista previa del proyecto de gestión de base de datos"
+            loading="lazy"
+          >
+
+
+        </article>
+
+
       </div>
+
+
+      <!-- =================================================
+           LLAMADO A CONTACTO
+      ================================================== -->
+
+      <div
+        class="hero-actions"
+        style="justify-content: center; margin-top: 45px;"
+      >
+
+        <a
+          href="contact.html"
+          class="btn btn-primary"
+        >
+
+          <i
+            class="fa-solid fa-paper-plane"
+            aria-hidden="true"
+          ></i>
+
+          Contactarme
+
+        </a>
+
+
+        <a
+          href="services.html"
+          class="btn btn-secondary"
+        >
+
+          <i
+            class="fa-solid fa-code"
+            aria-hidden="true"
+          ></i>
+
+          Ver habilidades
+
+        </a>
+
+      </div>
+
+
     </section>
+
+
   </main>
 
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
   <footer>
-    <p>© 2025 Alejandra Vélez - Todos los derechos reservados.</p>
+
+    <p>
+
+      ©
+
+      <span id="current-year">
+        2026
+      </span>
+
+      <strong>
+        Alejandra Velez
+      </strong>
+
+      · Portafolio de desarrollo de software.
+
+    </p>
+
   </footer>
+
+
 </body>
+
 </html>

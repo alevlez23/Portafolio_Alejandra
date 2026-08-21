@@ -1,44 +1,545 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
+  <!-- =====================================================
+       CONFIGURACIÓN BÁSICA
+  ====================================================== -->
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - Alejandra Vélez</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Página de contacto del portafolio de Alejandra Velez. Enlaces profesionales y formulario de contacto."
+  >
+
+  <meta
+    name="theme-color"
+    content="#020711"
+  >
+
+
+  <!-- =====================================================
+       TÍTULO
+  ====================================================== -->
+
+  <title>
+    Contacto | Portafolio Alejandra Velez
+  </title>
+
+
+  <!-- =====================================================
+       FONT AWESOME
+  ====================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+
+
+  <!-- =====================================================
+       ESTILOS
+  ====================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script
+    src="assets/js/main.js"
+    defer
+  ></script>
+
 </head>
 
+
 <body>
-  <header>
-    <h1>Contacto</h1>
-  </header>
+
+
+  <!-- =====================================================
+       NAVEGACIÓN
+  ====================================================== -->
 
   <nav>
-    <a href="index.html">Inicio</a>
-    <a href="about.html">Sobre mí</a>
-    <a href="services.html">Servicios</a>
-    <a href="proyecto.html">Proyectos</a>
-    <a href="contact.html" class="activo">Contacto</a>
+
+    <div class="nav-container">
+
+
+      <!-- MARCA -->
+
+      <a
+        href="index.html"
+        class="nav-brand"
+        aria-label="Ir al inicio"
+      >
+
+        Alejandra
+
+        <span>
+          .
+        </span>
+
+      </a>
+
+
+      <!-- =================================================
+           BOTÓN MENÚ MÓVIL
+      ================================================== -->
+
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+
+        <i
+          class="fa-solid fa-bars"
+          aria-hidden="true"
+        ></i>
+
+      </button>
+
+
+      <!-- =================================================
+           ENLACES
+      ================================================== -->
+
+      <div
+        class="nav-links"
+        id="nav-links"
+      >
+
+        <a href="index.html">
+          Inicio
+        </a>
+
+        <a href="about.html">
+          Sobre mí
+        </a>
+
+        <a href="services.html">
+          Habilidades
+        </a>
+
+        <a href="proyecto.html">
+          Proyectos
+        </a>
+
+        <a
+          href="contact.html"
+          class="activo"
+        >
+          Contacto
+        </a>
+
+      </div>
+
+    </div>
+
   </nav>
 
+
+  <!-- =====================================================
+       ENCABEZADO
+  ====================================================== -->
+
+  <header>
+
+    <h1>
+      Contacto
+    </h1>
+
+    <p class="header-subtitle">
+      Puedes comunicarte conmigo a través de mis
+      perfiles profesionales o utilizar el formulario
+      para preparar tu mensaje.
+    </p>
+
+  </header>
+
+
+  <!-- =====================================================
+       CONTENIDO PRINCIPAL
+  ====================================================== -->
+
   <main>
-    <h2>¿Quieres contactarme?</h2>
-    <p>Escríbeme un correo o visita mis redes profesionales.</p>
 
-    <form action="https://formspree.io/f/mypath" method="POST">
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu correo" required>
-      <textarea name="mensaje" placeholder="Tu mensaje..." required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
 
-    <div class="redes">
-      <a href="https://github.com/alevlez23" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/alejandra-velez-372924315/" target="_blank">LinkedIn</a>
-    </div>
+    <!-- ===================================================
+         CONTENEDOR DE CONTACTO
+    ==================================================== -->
+
+    <section class="contact-layout">
+
+
+      <!-- =================================================
+           INFORMACIÓN
+      ================================================== -->
+
+      <div class="contact-info">
+
+
+        <p class="section-label">
+          Conectemos
+        </p>
+
+
+        <h2>
+          Información de contacto
+        </h2>
+
+
+        <p>
+          Si quieres conocer más sobre mis proyectos,
+          colaborar o revisar mi trabajo, puedes
+          encontrarme en mis perfiles profesionales.
+        </p>
+
+
+        <!-- ===============================================
+             MÉTODOS DE CONTACTO
+        ================================================ -->
+
+        <div class="contact-methods">
+
+
+          <!-- GITHUB -->
+
+          <a
+            href="https://github.com/alevlez23"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-method"
+          >
+
+            <i
+              class="fa-brands fa-github"
+              aria-hidden="true"
+            ></i>
+
+
+            <div>
+
+              <strong>
+                GitHub
+              </strong>
+
+              <br>
+
+              <span>
+                github.com/alevlez23
+              </span>
+
+            </div>
+
+          </a>
+
+
+          <!-- LINKEDIN -->
+
+          <a
+            href="https://linkedin.com/in/alejandra-velez-372924315/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-method"
+          >
+
+            <i
+              class="fa-brands fa-linkedin"
+              aria-hidden="true"
+            ></i>
+
+
+            <div>
+
+              <strong>
+                LinkedIn
+              </strong>
+
+              <br>
+
+              <span>
+                Perfil profesional
+              </span>
+
+            </div>
+
+          </a>
+
+
+          <!-- PROYECTOS -->
+
+          <a
+            href="proyecto.html"
+            class="contact-method"
+          >
+
+            <i
+              class="fa-solid fa-folder-open"
+              aria-hidden="true"
+            ></i>
+
+
+            <div>
+
+              <strong>
+                Proyectos
+              </strong>
+
+              <br>
+
+              <span>
+                Revisar mi portafolio
+              </span>
+
+            </div>
+
+          </a>
+
+
+        </div>
+
+
+        <!-- ===============================================
+             REDES
+        ================================================ -->
+
+        <div
+          class="redes-sociales"
+          aria-label="Redes profesionales"
+        >
+
+
+          <a
+            href="https://github.com/alevlez23"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="GitHub"
+            aria-label="Abrir GitHub"
+          >
+
+            <i
+              class="fa-brands fa-github"
+              aria-hidden="true"
+            ></i>
+
+          </a>
+
+
+          <a
+            href="https://linkedin.com/in/alejandra-velez-372924315/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="LinkedIn"
+            aria-label="Abrir LinkedIn"
+          >
+
+            <i
+              class="fa-brands fa-linkedin-in"
+              aria-hidden="true"
+            ></i>
+
+          </a>
+
+
+        </div>
+
+      </div>
+
+
+      <!-- =================================================
+           FORMULARIO
+      ================================================== -->
+
+      <div class="contact-form-card">
+
+
+        <p class="section-label">
+          Mensaje
+        </p>
+
+
+        <h2>
+          Escríbeme
+        </h2>
+
+
+        <p>
+          Completa los campos para preparar un mensaje.
+          El formulario validará la información antes
+          de continuar.
+        </p>
+
+
+        <!-- ===============================================
+             FORMULARIO
+        ================================================ -->
+
+        <form
+          id="contact-form"
+          novalidate
+        >
+
+
+          <!-- NOMBRE -->
+
+          <div class="form-group">
+
+            <label for="nombre">
+              Nombre
+            </label>
+
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Escribe tu nombre"
+              autocomplete="name"
+              required
+            >
+
+          </div>
+
+
+          <!-- CORREO -->
+
+          <div class="form-group">
+
+            <label for="email">
+              Correo electrónico
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nombre@correo.com"
+              autocomplete="email"
+              required
+            >
+
+          </div>
+
+
+          <!-- ASUNTO -->
+
+          <div class="form-group">
+
+            <label for="asunto">
+              Asunto
+            </label>
+
+            <input
+              type="text"
+              id="asunto"
+              name="asunto"
+              placeholder="Motivo del mensaje"
+              required
+            >
+
+          </div>
+
+
+          <!-- MENSAJE -->
+
+          <div class="form-group">
+
+            <label for="mensaje">
+              Mensaje
+            </label>
+
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              placeholder="Escribe tu mensaje..."
+              required
+            ></textarea>
+
+          </div>
+
+
+          <!-- BOTÓN -->
+
+          <button
+            type="submit"
+          >
+
+            <i
+              class="fa-solid fa-paper-plane"
+              aria-hidden="true"
+            ></i>
+
+            Preparar mensaje
+
+          </button>
+
+
+          <!-- ESTADO -->
+
+          <p
+            class="form-note"
+            id="form-status"
+            aria-live="polite"
+          >
+            Este formulario es una demostración del
+            portafolio y no almacena información.
+          </p>
+
+
+        </form>
+
+
+      </div>
+
+
+    </section>
+
+
   </main>
 
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
   <footer>
-    <p>© 2025 Alejandra Vélez - Todos los derechos reservados.</p>
+
+    <p>
+
+      ©
+
+      <span id="current-year">
+        2026
+      </span>
+
+      <strong>
+        Alejandra Velez
+      </strong>
+
+      · Portafolio de desarrollo de software.
+
+    </p>
+
   </footer>
+
+
 </body>
+
 </html>
